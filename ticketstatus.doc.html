@@ -367,7 +367,9 @@
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
         <h1 class="slds-text-heading--large">TicketStatus</h1>
-        <div class="slds-text-body--regular"></div>
+        <div class="slds-text-body--regular"><p>MongoDB/GraphQL TicketStatus embedded model</p>
+<p>Modelo embebido de estado de Ticket de MongoDB/GraphQL</p>
+</div>
     </div>
 </section>
 <section>
@@ -378,7 +380,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">TicketStatus</span> {</li><li></li><li><span class="tab"><span class="meta">timestamp</span>: <a class="support type" href="date.doc.html">Date</a>! </span></li><li></li><li><span class="tab"><span class="meta">statusCode</span>: <a class="support type" href="ticketstatuscode.doc.html">TicketStatusCode</a>! </span></li><li></li><li><span class="tab"><span class="meta">queuePosition</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">TicketStatus</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Datetime of creation / update</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   Día y hora de creación y/o actualización</span></span></li><li><span class="tab"><span class="meta">timestamp</span>: <a class="support type" href="date.doc.html">Date</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Reflects the status of the resource for the ticket user at this given timestamp</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   Refleja el estado del recurso para el ticket del usuario en el momento del </span></span></li><li><span class="tab"><span class="comment line">#   timestamp</span></span></li><li><span class="tab"><span class="meta">statusCode</span>: <a class="support type" href="ticketstatuscode.doc.html">TicketStatusCode</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Nullable field storing the position in the queue if the user is queued for using </span></span></li><li><span class="tab"><span class="comment line">#   the resource</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   Propiedad nulable que guarda la posición en la cola si el usuario se encuentra </span></span></li><li><span class="tab"><span class="comment line">#   encolado para usar el recurso</span></span></li><li><span class="tab"><span class="meta">queuePosition</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -389,7 +391,11 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="ticket.doc.html" title="Ticket - ">Ticket<em>null</em></a><li><li><a href="ticketview.doc.html" title="TicketView - ">TicketView<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="ticket.doc.html" title="Ticket - MongoDB/GraphQL Ticket embedded model that stores the state machine status for a given user
+
+Modelo embebido de Ticket de MongoDB/GraphQL que guarda el estado de la máquina de estados para un usuario">Ticket<em>MongoDB/GraphQL Ticket embedded model that stores the state machine status for a given user
+
+Modelo embebido de Ticket de MongoDB/GraphQL que guarda el estado de la máquina de estados para un usuario</em></a><li><li><a href="ticketview.doc.html" title="TicketView - ">TicketView<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>

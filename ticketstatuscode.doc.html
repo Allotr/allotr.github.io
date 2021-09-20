@@ -367,7 +367,9 @@
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">ENUM</p>
         <h1 class="slds-text-heading--large">TicketStatusCode</h1>
-        <div class="slds-text-body--regular"></div>
+        <div class="slds-text-body--regular"><p>Ticket status code enumeration representing the state machine</p>
+<p>Enumeración de códigos de estado del ticket</p>
+</div>
     </div>
 </section>
 <section>
@@ -378,7 +380,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">enum</span> <span class="identifier">TicketStatusCode</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">INITIALIZED</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">REQUESTING</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">QUEUED</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">AWAITING_CONFIRMATION</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">ACTIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">INACTIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">REVOKED</span></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">enum</span> <span class="identifier">TicketStatusCode</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The user was just added to the resource. This is the initial state</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   El usuario fue añadido al recurso. Es el estado inicial</span></span></li><li><span class="tab"><span class="meta">INITIALIZED</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The user wants to use the resource</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   El usuario quiere usar el recurso</span></span></li><li><span class="tab"><span class="meta">REQUESTING</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The user entered the queue because there were no available slots</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   El usuario entró a la cola porque no había puestos libres</span></span></li><li><span class="tab"><span class="meta">QUEUED</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The user queued can finally use the resource and has to confirm that still wants </span></span></li><li><span class="tab"><span class="comment line">#   to use it</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   El usuario encolado ya puede usar el recurso y tiene que confirmar si sigue </span></span></li><li><span class="tab"><span class="comment line">#   queriendo usarlo</span></span></li><li><span class="tab"><span class="meta">AWAITING_CONFIRMATION</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The user is using the resource</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   El usuario está usando el recurso</span></span></li><li><span class="tab"><span class="meta">ACTIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The user has stopped using the resource</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   El usuario ha dejado de usar el recurso</span></span></li><li><span class="tab"><span class="meta">INACTIVE</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The user was banned or invalidated for some reason (FUTURE PROOFING, NOT IN USE)</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   El usuario ha sido prohibido o invalidado por alguna razón (PREVISIÓN DE FUTUROS </span></span></li><li><span class="tab"><span class="comment line">#   REQUISITOS, NO SE USA)</span></span></li><li><span class="tab"><span class="meta">REVOKED</span></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -389,7 +391,19 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="resourcecard.doc.html" title="ResourceCard - ">ResourceCard<em>null</em></a><li><li><a href="resourcenotification.doc.html" title="ResourceNotification - ">ResourceNotification<em>null</em></a><li><li><a href="ticketstatus.doc.html" title="TicketStatus - ">TicketStatus<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="resourcecard.doc.html" title="ResourceCard - A subset of the resource information for showing the current status of the resource for the logged in user
+
+Un subconjunto de la información del recurso para mostrar el estado actual del recurso para el usuario de la sesión">ResourceCard<em>A subset of the resource information for showing the current status of the resource for the logged in user
+
+Un subconjunto de la información del recurso para mostrar el estado actual del recurso para el usuario de la sesión</em></a><li><li><a href="resourcenotification.doc.html" title="ResourceNotification - MongoDB/GraphQL Resource Notification model
+
+Modelo de Notificación de Recurso de MongoDB/GraphQL">ResourceNotification<em>MongoDB/GraphQL Resource Notification model
+
+Modelo de Notificación de Recurso de MongoDB/GraphQL</em></a><li><li><a href="ticketstatus.doc.html" title="TicketStatus - MongoDB/GraphQL TicketStatus embedded model
+
+Modelo embebido de estado de Ticket de MongoDB/GraphQL">TicketStatus<em>MongoDB/GraphQL TicketStatus embedded model
+
+Modelo embebido de estado de Ticket de MongoDB/GraphQL</em></a><li></ul>
     </div>
 </section>
 <footer>

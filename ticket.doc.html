@@ -367,7 +367,9 @@
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
         <h1 class="slds-text-heading--large">Ticket</h1>
-        <div class="slds-text-body--regular"></div>
+        <div class="slds-text-body--regular"><p>MongoDB/GraphQL Ticket embedded model that stores the state machine status for a given user</p>
+<p>Modelo embebido de Ticket de MongoDB/GraphQL que guarda el estado de la máquina de estados para un usuario</p>
+</div>
     </div>
 </section>
 <section>
@@ -378,7 +380,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Ticket</span> {</li><li></li><li><span class="tab"><span class="meta">ticketId</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">creationDate</span>: <a class="support type" href="date.doc.html">Date</a>! </span></li><li></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="ticketuserinfo.doc.html">TicketUserInfo</a>! </span></li><li></li><li><span class="tab"><span class="meta">statuses</span>: [<a class="support type" href="ticketstatus.doc.html">TicketStatus</a>!]! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Ticket</span> {</li><li></li><li><span class="tab"><span class="meta">ticketId</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">creationDate</span>: <a class="support type" href="date.doc.html">Date</a>! </span></li><li></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="ticketuserinfo.doc.html">TicketUserInfo</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Each ticket has a status list saving all the usage made by the user and the </span></span></li><li><span class="tab"><span class="comment line">#   current status</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   Cada ticket tiene una lista de estados que guarda el progreos del recurso </span></span></li><li><span class="tab"><span class="comment line">#   respecto al usuario y el estado actual</span></span></li><li><span class="tab"><span class="meta">statuses</span>: [<a class="support type" href="ticketstatus.doc.html">TicketStatus</a>!]! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -389,7 +391,11 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="resource.doc.html" title="Resource - ">Resource<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="resource.doc.html" title="Resource - MongoDB/GraphQL Resource model
+
+Modelo de Recurso de MongoDB/GraphQL">Resource<em>MongoDB/GraphQL Resource model
+
+Modelo de Recurso de MongoDB/GraphQL</em></a><li></ul>
     </div>
 </section>
 <footer>

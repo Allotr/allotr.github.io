@@ -367,7 +367,9 @@
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
         <h1 class="slds-text-heading--large">ResourceNotification</h1>
-        <div class="slds-text-body--regular"></div>
+        <div class="slds-text-body--regular"><p>MongoDB/GraphQL Resource Notification model</p>
+<p>Modelo de Notificación de Recurso de MongoDB/GraphQL</p>
+</div>
     </div>
 </section>
 <section>
@@ -378,7 +380,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ResourceNotification</span> {</li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">titleRef</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">descriptionRef</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="notificationuserinfo.doc.html">NotificationUserInfo</a>! </span></li><li></li><li><span class="tab"><span class="meta">resource</span>: <a class="support type" href="notificationresourcedata.doc.html">NotificationResourceData</a> </span></li><li></li><li><span class="tab"><span class="meta">ticketStatus</span>: <a class="support type" href="ticketstatuscode.doc.html">TicketStatusCode</a>! </span></li><li></li><li><span class="tab"><span class="meta">timestamp</span>: <a class="support type" href="date.doc.html">Date</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ResourceNotification</span> {</li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Determines what kind of notification it is and the title shown</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   Determina qué tipo de notificación y el título mostrado</span></span></li><li><span class="tab"><span class="meta">titleRef</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Determines the description shown in the notification</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   Determina queé se muestra en la descripción de la notificación</span></span></li><li><span class="tab"><span class="meta">descriptionRef</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">user</span>: <a class="support type" href="notificationuserinfo.doc.html">NotificationUserInfo</a>! </span></li><li></li><li><span class="tab"><span class="meta">resource</span>: <a class="support type" href="notificationresourcedata.doc.html">NotificationResourceData</a> </span></li><li></li><li><span class="tab"><span class="meta">ticketStatus</span>: <a class="support type" href="ticketstatuscode.doc.html">TicketStatusCode</a>! </span></li><li></li><li><span class="tab"><span class="meta">timestamp</span>: <a class="support type" href="date.doc.html">Date</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -389,7 +391,15 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li><li><a href="subscription.doc.html" title="Subscription - ">Subscription<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="query.doc.html" title="Query - Query operations for Allotr API
+
+Operaciones de consulta de la API Allotr">Query<em>Query operations for Allotr API
+
+Operaciones de consulta de la API Allotr</em></a><li><li><a href="subscription.doc.html" title="Subscription - Subscription operations for Allotr API
+
+Operaciones de suscripción de la API Allotr">Subscription<em>Subscription operations for Allotr API
+
+Operaciones de suscripción de la API Allotr</em></a><li></ul>
     </div>
 </section>
 <footer>

@@ -367,7 +367,9 @@
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
         <h1 class="slds-text-heading--large">TicketUserInfo</h1>
-        <div class="slds-text-body--regular"></div>
+        <div class="slds-text-body--regular"><p>MongoDB/GraphQL TicketUserInfo embedded model</p>
+<p>Modelo embebido de información de Usuario del Ticket de MongoDB/GraphQL</p>
+</div>
     </div>
 </section>
 <section>
@@ -378,7 +380,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">TicketUserInfo</span> {</li><li></li><li><span class="tab"><span class="meta">userId</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">username</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">role</span>: <a class="support type" href="localrole.doc.html">LocalRole</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">TicketUserInfo</span> {</li><li></li><li><span class="tab"><span class="meta">userId</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">username</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   A user has a role that determines the actions allowed in the given resource</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   Un usuario tiene un rol que determina las acciones permitidas en el recurso</span></span></li><li><span class="tab"><span class="meta">role</span>: <a class="support type" href="localrole.doc.html">LocalRole</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -389,7 +391,11 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="ticket.doc.html" title="Ticket - ">Ticket<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="ticket.doc.html" title="Ticket - MongoDB/GraphQL Ticket embedded model that stores the state machine status for a given user
+
+Modelo embebido de Ticket de MongoDB/GraphQL que guarda el estado de la máquina de estados para un usuario">Ticket<em>MongoDB/GraphQL Ticket embedded model that stores the state machine status for a given user
+
+Modelo embebido de Ticket de MongoDB/GraphQL que guarda el estado de la máquina de estados para un usuario</em></a><li></ul>
     </div>
 </section>
 <footer>

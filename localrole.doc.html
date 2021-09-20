@@ -367,7 +367,9 @@
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">ENUM</p>
         <h1 class="slds-text-heading--large">LocalRole</h1>
-        <div class="slds-text-body--regular"></div>
+        <div class="slds-text-body--regular"><p>Local role enumeration</p>
+<p>Enumeración de roles locales</p>
+</div>
     </div>
 </section>
 <section>
@@ -378,7 +380,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">enum</span> <span class="identifier">LocalRole</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">RESOURCE_ADMIN</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">RESOURCE_USER</span></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">enum</span> <span class="identifier">LocalRole</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The user can edit or delete the resurce apart from user privileges</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   El usuario puede editar o borrar el recurso aparte de sus privilegios de usuario</span></span></li><li><span class="tab"><span class="meta">RESOURCE_ADMIN</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   The user can view or interact with the resource</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   El usuario puede ver o interactuar con el recurso</span></span></li><li><span class="tab"><span class="meta">RESOURCE_USER</span></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -389,7 +391,15 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="resourcecard.doc.html" title="ResourceCard - ">ResourceCard<em>null</em></a><li><li><a href="resourceuser.doc.html" title="ResourceUser - ">ResourceUser<em>null</em></a><li><li><a href="ticketuserinfo.doc.html" title="TicketUserInfo - ">TicketUserInfo<em>null</em></a><li><li><a href="ticketviewuserinfo.doc.html" title="TicketViewUserInfo - ">TicketViewUserInfo<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="resourcecard.doc.html" title="ResourceCard - A subset of the resource information for showing the current status of the resource for the logged in user
+
+Un subconjunto de la información del recurso para mostrar el estado actual del recurso para el usuario de la sesión">ResourceCard<em>A subset of the resource information for showing the current status of the resource for the logged in user
+
+Un subconjunto de la información del recurso para mostrar el estado actual del recurso para el usuario de la sesión</em></a><li><li><a href="resourceuser.doc.html" title="ResourceUser - ">ResourceUser<em>null</em></a><li><li><a href="ticketuserinfo.doc.html" title="TicketUserInfo - MongoDB/GraphQL TicketUserInfo embedded model
+
+Modelo embebido de información de Usuario del Ticket de MongoDB/GraphQL">TicketUserInfo<em>MongoDB/GraphQL TicketUserInfo embedded model
+
+Modelo embebido de información de Usuario del Ticket de MongoDB/GraphQL</em></a><li><li><a href="ticketviewuserinfo.doc.html" title="TicketViewUserInfo - ">TicketViewUserInfo<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>

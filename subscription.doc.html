@@ -367,7 +367,9 @@
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
         <h1 class="slds-text-heading--large">Subscription</h1>
-        <div class="slds-text-body--regular"></div>
+        <div class="slds-text-body--regular"><p>Subscription operations for Allotr API</p>
+<p>Operaciones de suscripción de la API Allotr</p>
+</div>
     </div>
 </section>
 <section>
@@ -378,7 +380,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">Subscription</span> {</li><li></li><li><span class="tab"><span class="meta">newResourceReady</span>: <a class="support type" href="resourceupdate.doc.html">ResourceUpdate</a> </span></li><li></li><li><span class="tab"><span class="meta">newResourceCreated</span>: <a class="support type" href="resourcecard.doc.html">ResourceCard</a> </span></li><li></li><li><span class="tab"><span class="meta">myNotificationDataSub</span>: [<a class="support type" href="resourcenotification.doc.html">ResourceNotification</a>!]! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Subscription</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Subscribes to updates on resources created by/shared with the logged in user</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   Se suscribe a actualizaciones de recursos creados por/compartidos con el usuario </span></span></li><li><span class="tab"><span class="comment line">#   de la sesión</span></span></li><li><span class="tab"><span class="meta">newResourceReady</span>: <a class="support type" href="resourceupdate.doc.html">ResourceUpdate</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Subscribes to resources creations that are created by/shared with the logged in </span></span></li><li><span class="tab"><span class="comment line">#   user</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   Se suscribe a creaciones de recursos que sean creados por/compartidos con el </span></span></li><li><span class="tab"><span class="comment line">#   usuario de la sesión</span></span></li><li><span class="tab"><span class="meta">newResourceCreated</span>: <a class="support type" href="resourcecard.doc.html">ResourceCard</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Subscribes to updates on notifications for the logged in user</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line">#   Se suscribe a actualizaciones de notificaciones para el usuario de la sesión</span></span></li><li><span class="tab"><span class="meta">myNotificationDataSub</span>: [<a class="support type" href="resourcenotification.doc.html">ResourceNotification</a>!]! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
