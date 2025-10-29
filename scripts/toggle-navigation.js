@@ -1,8 +1,8 @@
 (function () {
 
-    var ACTIVE_CLASS = 'is-active';
-    var navigation = document.querySelector('nav');
-    var toggles = document.querySelectorAll('.js-toggle-navigation');
+    const ACTIVE_CLASS = 'is-active';
+    const navigation = document.querySelector('nav');
+    const toggles = document.querySelectorAll('.js-toggle-navigation');
 
     function toggleNavigation() {
         navigation.classList.contains(ACTIVE_CLASS) ?

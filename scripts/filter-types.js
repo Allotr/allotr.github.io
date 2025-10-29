@@ -1,6 +1,5 @@
 (function () {
-    var HIDE_CLASS = 'slds-hide';
-    var ITEM_CLASS = 'slds-item';
+    const HIDE_CLASS = 'slds-hide';
 
     /**
      * @class Item
@@ -56,8 +55,8 @@
      */
     ItemList.fromSelector = function (selector) {
 
-        var lis = document.querySelectorAll(selector);
-        var items = Array.prototype.map.call(lis, function (li) {
+        const lis = document.querySelectorAll(selector);
+        const items = Array.prototype.map.call(lis, function (li) {
             return new Item(li);
         })
 
@@ -84,9 +83,9 @@
      * @var {ItemList} items
      * @var {HTMLInputElement} input
      */
-    var items = ItemList.fromSelector('nav .slds-navigation-list--vertical li');
-    var input = document.getElementById('type-search');
-    var lastMatch = '';
+    const items = ItemList.fromSelector('nav .slds-navigation-list--vertical li');
+    const input = document.getElementById('type-search');
+    let lastMatch = '';
 
     function onChange() {
         if (input.value === lastMatch)
