@@ -96,7 +96,7 @@ main code.highlight::before {
     height: $spacing-small;
     width: $spacing-small;
     position: absolute;
-    top: $spacing-x-small; //border: 1px solid darken($color: #4D4D4C, $amount: 10%);
+    top: $spacing-x-small;
     border-radius: 100%;
     cursor: pointer;
 }
